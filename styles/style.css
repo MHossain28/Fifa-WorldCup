@@ -7,6 +7,11 @@
 ----------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap');
 /*---------- Google font end  -----------------*/
+/* Header Nav  */
+.header{
+    background-color: #ffabab;
+    height: 30px;
+}
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -85,6 +90,11 @@ body{
     height: 250px;
     border-radius: 10px;
     margin-right: 20px;
+    position: sticky;
+     top: 0px;
+}
+.left-bar-buttons:hover {
+    background-color: rgb(85, 85, 85);
 }
 .left-bar-button{
     background-color: rgb(243, 243, 243);
@@ -98,6 +108,12 @@ body{
     text-align: center;
     text-decoration: none;
     color: black;
+    transition: 0.3s;
+}
+.left-bar-button:hover{
+    color: white;
+    background-color: rgb(255, 41, 41);
+    width: 190px;
 }
 /*----- Second Section Right -----*/
 .right-section-grid{
@@ -112,13 +128,27 @@ body{
     box-shadow: 0px 0px 5px;
     border-radius: 10px;
     background-color: rgb(255, 212, 212);
-    border: 1px solid rgb(52, 51, 51);
+    /* border: 1px solid rgb(52, 51, 51);? */
+    transition: 1s;
+}
+.card:hover {
+    background-color: rgb(255, 190, 190);
 }
 .card-image img{
-    width:100%;
+    width:90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
     height: 120px;
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
+}
+.card:hover img{
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0%;
+    margin-right: 0%;
+    transition: width 1s, height 2s;
 }
 .card-info{
     padding: 10px;
@@ -191,6 +221,9 @@ hr{
 .another-site p a{
     font-size: 2em;
    
+}
+.another-site p:hover a{
+    font-size: 2.3em;
 }
 #fb{
     color: rgb(3, 128, 225);
@@ -369,7 +402,7 @@ hr{
         
     }
     .card-image img{
-        width:100%;
+        width:90%;
         height: 200px;
     }
     
